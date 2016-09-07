@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lxy.liying.circletodo">
+
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 添加渠道 -->
+    <meta-data
+        android:name="BMOB_CHANNEL"
+        android:value="bmob" />
+
+    <application xmlns:tools="http://schemas.android.com/tools"
+        android:name=".app.App"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+
+        <!-- 欢迎界面 -->
+        <activity
+            android:name=".ui.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.CalendarActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- 标记的设置界面 -->
+        <activity
+            android:name=".ui.MarkActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/label_set_mark" />
+        <!-- 关于界面 -->
+        <activity
+            android:name=".ui.AboutActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/label_about"
+            android:screenOrientation="portrait" />
+        <!-- 清理界面 -->
+        <activity
+            android:name=".ui.CleanupActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/label_cleanup"
+            android:screenOrientation="portrait" />
+        <!-- 显示每日标记列表的界面 -->
+        <activity
+            android:name=".ui.DateMarkActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/label_current_day"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <!--显示每日可选择标记的界面-->
+        <activity
+            android:name=".ui.RemainListActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/label_remain_marks"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <!-- 个人信息页面 -->
+        <activity
+            android:name=".ui.PersonalActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/label_personal"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 用户登录页面 -->
+        <activity
+            android:name=".ui.LoginActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/label_login" />
+        <!-- 使用邮箱登录页面 -->
+        <activity
+            android:name=".ui.LoginByEmailActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/label_login_via_email" />
+        <!-- 用户注册页面 -->
+        <activity
+            android:name=".ui.RegisterActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/label_register" />
+
+        <!-- 将标记同步到云端 -->
+        <activity
+            android:name=".ui.BackupActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/label_backup"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <!-- 将标记从云端恢复 -->
+        <activity
+            android:name=".ui.RestoreActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/label_restore"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <!-- 更改用户密码 -->
+        <activity
+            android:name=".ui.UpdatePasswordActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/label_change_password" />
+        <!-- 检查更新 -->
+        <activity
+            android:name="cn.bmob.v3.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 统计今日以后（含今日）的标记页面 -->
+        <activity
+            android:name=".ui.StatisticsActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/label_mark_statistics"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <!-- 重置密码后首次登录的界面 -->
+        <activity
+            android:name=".ui.ResetPasswordLoginActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/label_init_new_password" />
+        <!-- 设置页面 -->
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/label_settings" />
+        <!-- 应用推荐 -->
+        <activity
+            android:name=".ui.RecommendActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/label_recommend" />
+        <!-- 分享Activity -->
+        <activity
+            android:name=".ui.ShareActivity"
+            android:label="@string/label_share_to"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享入口Activity -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- QQ分享的Activity -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="1105587828" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 友盟元数据 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57a19a3067e58e9a89001207" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="tqq" />
+    </application>
+
+</manifest>

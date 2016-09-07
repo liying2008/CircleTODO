@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">CircleTODO</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="copyright">Copyright©2016 liying All Rights Reserved</string>
+    <string name="short_desc">用色彩标记日程</string>
+    <string name="web_site">http://duduhuo.cc/</string>
+    <string name="action_mark">标记</string>
+    <string name="action_cleanup_all_mark">清除所有标记</string>
+    <string name="action_about">关于</string>
+    <string name="action_logout">退出登录</string>
+    <string name="action_help">帮助</string>
+    <string name="action_regist">注册</string>
+    <string name="action_backup">备份到云端</string>
+    <string name="action_restore">从云端恢复</string>
+    <string name="action_share_marks">分享标记</string>
+    <string name="action_cleanup">清理标记</string>
+    <string name="action_settings">设置</string>
+    <string name="action_share">分享应用</string>
+    <string name="action_rating">为应用评分</string>
+
+    <string name="about_author_email">作者邮箱</string>
+    <string name="about_author_email_c">liruoer2008@yeah.net</string>
+    <string name="about_author_weibo">作者微博</string>
+    <string name="about_recommend">应用推荐</string>
+    <string name="about_author_weibo_c">"@"独毒火</string>
+    <string name="about_official_website">官方下载</string>
+    <string name="about_check_update">检查更新</string>
+    <string name="about_source_open_failed">未安装网页浏览器，打开失败</string>
+    <string name="ime_change_email">更换</string>
+
+    <!--已选择颜色的操作选项-->
+    <string-array name="sel_color_option">
+        <item>更改标记名称</item>
+        <item>更换颜色</item>
+    </string-array>
+
+    <!--清理日期-->
+    <string-array name="spinner_option">
+        <item>前</item>
+        <item>后</item>
+    </string-array>
+
+    <!--分享标记-->
+    <string-array name="share_mark_option">
+        <item>分享我的标记</item>
+        <item>复制他(她)的标记</item>
+    </string-array>
+
+    <string name="register_link">没有账号？点击此处注册</string>
+    <string name="reset_password_link">忘记密码？点击此处重置</string>
+    <string name="reset_password_login_link">重置密码后首次登录请点这里</string>
+    <string name="login_by_email_link">使用邮箱登录</string>
+    <string name="login_by_username_link">返回用户名登录</string>
+
+    <string name="recommend_name_xdp">XDPlayer</string>
+    <string name="recommend_name_ipgw">东大IPGW</string>
+    <string name="recommend_name_sec">SEC密码本</string>
+
+    <string name="recommend_desc_xdp">观看IPv6电视直播</string>
+    <string name="recommend_desc_ipgw">东北大学校园网关快速登录</string>
+    <string name="recommend_desc_sec">安全可靠的密码存储工具</string>
+</resources>

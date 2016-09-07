@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="lxy.liying.circlecheckin.MainActivity">
+    <item
+        android:id="@+id/action_mark"
+        android:icon="@drawable/setting_icon_mark"
+        android:orderInCategory="0"
+        android:title="@string/action_mark"
+        app:showAsAction="always" />
+
+</menu>

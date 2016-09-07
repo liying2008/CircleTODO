@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.CalendarActivity"
+    tools:showIn="@layout/activity_calendar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/prevMonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/button_prev_selector" />
+
+            <TextView
+                android:id="@+id/currentMonth"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="2014年6月"
+                android:textColor="@color/register_text_selector"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/nextMonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/button_next_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                style="@style/weekName"
+                android:text="周日"
+                android:textColor="#177ed6"
+                android:textSize="11sp" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="周一"
+                android:textSize="11sp" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="周二"
+                android:textSize="11sp" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="周三"
+                android:textSize="11sp" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="周四"
+                android:textSize="11sp" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="周五"
+                android:textSize="11sp" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="周六"
+                android:textColor="#177ed6"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <lxy.liying.circletodo.view.FlipperForScrollView
+            android:id="@+id/flipper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" />
+
+        <LinearLayout
+            android:id="@+id/llDateMark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <lxy.liying.circletodo.view.ListViewForScrollView
+                android:id="@+id/lvDateMarkSelected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp" />
+
+            <TextView
+                android:id="@+id/tvSelectMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:gravity="center"
+                android:text="没有已选择标记"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/llAddMarks"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="6dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/selector_middle"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/add_mark_selector"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="添加标记"
+                    android:textColor="@color/about_text_left_selector" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

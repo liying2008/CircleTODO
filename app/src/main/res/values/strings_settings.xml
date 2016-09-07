@@ -1,0 +1,17 @@
+<resources>
+    <string-array name="mark_statistics_scope">
+        <item>本日后</item>
+        <item>本日前</item>
+        <item>所有</item>
+    </string-array>
+
+    <string-array name="mark_share_option">
+        <item>覆盖已有标记</item>
+        <item>忽略新标记</item>
+    </string-array>
+
+    <string-array name="mark_display_mode">
+        <item>显示在界面底部</item>
+        <item>以弹窗方式显示</item>
+    </string-array>
+</resources>

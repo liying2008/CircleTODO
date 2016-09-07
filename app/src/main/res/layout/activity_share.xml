@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/repeat_bg"
+    android:orientation="horizontal"
+    tools:context=".ui.ShareActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_weibo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/weibo"
+            android:clickable="true"
+            android:onClick="shareToWeibo" />
+
+        <Button
+            android:id="@+id/btn_cqq"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/cqq"
+            android:onClick="shareToQQ" />
+
+        <Button
+            android:id="@+id/btn_wx"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/wx"
+            android:onClick="shareToWeixin" />
+
+        <Button
+            android:id="@+id/btn_pyq"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/pyq"
+            android:onClick="shareToPYQ" />
+    </LinearLayout>
+</LinearLayout>

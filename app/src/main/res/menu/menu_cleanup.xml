@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="lxy.liying.circlecheckin.MainActivity">
+    <item
+        android:id="@+id/action_cleanup_all_mark"
+        android:orderInCategory="0"
+        android:title="@string/action_cleanup_all_mark"
+        app:showAsAction="always" />
+
+</menu>

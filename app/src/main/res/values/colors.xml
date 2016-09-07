@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="popup_bg">#3dffffff</color>
+    <color name="light_blue">#c3cbd9</color>
+    <color name="msg_emote_divider">#ffa1a1a1</color>
+    <color name="border_color">#e2e2e2</color>
+    <color name="border_color2">#eaeaea</color>
+    <color name="line_color">#DDDADFE5</color>
+    <color name="item_function_text_color">#333333</color>
+    <!-- menudraw -->
+    <color name="md__defaultBackground">#FF555555</color>
+    <color name="grid_selected_color">#b83a90f9</color>
+    <color name="text_color">#818181</color>
+    <color name="time_color">#919191</color>
+
+    <!-- A light Holo shade of blue -->
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <!-- A light Holo shade of green -->
+    <color name="holo_green_light">#ff99cc00</color>
+    <!-- A light Holo shade of red -->
+    <color name="holo_red_light">#ffff4444</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <!-- A dark Holo shade of green -->
+    <color name="holo_green_dark">#ff669900</color>
+    <!-- A dark Holo shade of red -->
+    <color name="holo_red_dark">#ffcc0000</color>
+    <!-- A Holo shade of purple -->
+    <color name="holo_purple">#ffaa66cc</color>
+    <!-- A light Holo shade of orange -->
+    <color name="holo_orange_light">#ffffbb33</color>
+    <!-- A dark Holo shade of orange -->
+    <color name="holo_orange_dark">#ffff8800</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="holo_blue_bright">#ff00ddff</color>
+
+    <!--标记预设的颜色-->
+    <color name="color_1">#ed8991</color>
+    <color name="color_2">#5cb9fe</color>
+    <color name="color_3">#ecbf41</color>
+    <color name="color_4">#8263d6</color>
+    <color name="color_5">#80a48a</color>
+    <color name="color_6">#f58603</color>
+    <color name="color_7">#bc7ed2</color>
+
+    <color name="color_8">#a9b6b8</color>
+    <color name="color_9">#937157</color>
+    <color name="color_10">#295112</color>
+    <color name="color_11">#9ace7a</color>
+    <color name="color_12">#c48978</color>
+    <color name="color_13">#4055a7</color>
+    <color name="color_14">#719ae7</color>
+    <!--抽屉个人信息字体颜色-->
+    <color name="header_name">#FFFFFF</color>
+    <color name="header_email">#c8c8c8</color>
+
+    <color name="grid_bg">#32ffffff</color>
+    <color name="floating_action_menu_bg">#a9ffffff</color>
+</resources>

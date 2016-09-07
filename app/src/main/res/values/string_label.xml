@@ -1,0 +1,19 @@
+<resources>
+    <string name="label_about">关于</string>
+    <string name="label_set_mark">设置标记</string>
+    <string name="label_cleanup">清理标记</string>
+    <string name="label_current_day">当日标记</string>
+    <string name="label_remain_marks">添加标记</string>
+    <string name="label_personal">个人中心</string>
+    <string name="label_login">登录</string>
+    <string name="label_login_via_email">使用邮箱登录</string>
+    <string name="label_register">注册</string>
+    <string name="label_backup">备份到云端</string>
+    <string name="label_restore">从云端恢复</string>
+    <string name="label_change_password">更改密码</string>
+    <string name="label_mark_statistics">统计标记</string>
+    <string name="label_init_new_password">初始化重置的密码</string>
+    <string name="label_settings">应用设置</string>
+    <string name="label_recommend">应用推荐</string>
+    <string name="label_share_to">分享到</string>
+</resources>

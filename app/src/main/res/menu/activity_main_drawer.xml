@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_mark"
+            android:icon="@drawable/ic_mark"
+            android:title="@string/action_mark" />
+        <item
+            android:id="@+id/action_backup"
+            android:icon="@drawable/ic_backup"
+            android:title="@string/action_backup" />
+        <item
+            android:id="@+id/action_restore"
+            android:icon="@drawable/ic_restore"
+            android:title="@string/action_restore" />
+        <item
+            android:id="@+id/action_share_marks"
+            android:icon="@drawable/ic_share_marks"
+            android:title="@string/action_share_marks" />
+        <item
+            android:id="@+id/action_cleanup"
+            android:icon="@drawable/ic_cleanup"
+            android:title="@string/action_cleanup" />
+    </group>
+
+    <item android:title="其他">
+        <menu>
+
+            <item
+                android:id="@+id/action_settings"
+                android:icon="@drawable/ic_action_settings"
+                android:title="@string/action_settings" />
+            <item
+                android:id="@+id/action_regist"
+                android:icon="@drawable/ic_regist"
+                android:title="@string/action_regist" />
+            <item
+                android:id="@+id/action_share"
+                android:icon="@drawable/ic_share"
+                android:title="@string/action_share" />
+            <item
+                android:id="@+id/action_rating"
+                android:icon="@drawable/setting_icon_rate"
+                android:title="@string/action_rating" />
+            <item
+                android:id="@+id/action_about"
+                android:icon="@drawable/ic_help"
+                android:title="@string/action_about" />
+
+            <item
+                android:id="@+id/action_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/action_logout" />
+
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        </menu>
+    </item>
+
+</menu>
