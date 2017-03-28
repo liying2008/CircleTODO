@@ -20,15 +20,12 @@ CircleTODO是一款新颖的日程管理软件，除了具有独特的以色彩�
 
 更新日期
 ----
-2016-9-7  
+2017-3-28
 
 更新详情
 ----
 
-【优化】在界面底部显示每日标记改为默认显示方式；  
-【优化】增强应用安全性；  
-【优化】修改部分界面；  
-【修复】修复一些BUG。  
+【新增】统计标记可以单独统计某一个标记。
 
 感谢
 ----
@@ -40,7 +37,7 @@ CircleTODO是一款新颖的日程管理软件，除了具有独特的以色彩�
 License
 ----
   
-	Copyright 2016 LiYing
+	Copyright 2016-2017 LiYing
 	
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.

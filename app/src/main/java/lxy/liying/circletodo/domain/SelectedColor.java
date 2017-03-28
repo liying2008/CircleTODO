@@ -71,6 +71,17 @@ public class SelectedColor {
         return false;
     }
 
+    /**
+     * 利用HashSet去重，务必重写hashCode()方法
+     * @return
+     */
+    @Override
+    public int hashCode() {
+        int result;
+        result = (color_event == null ? 0 : color_event.hashCode());
+        return result;
+    }
+
     @Override
     public String toString() {
         return "SelectedColor{" +

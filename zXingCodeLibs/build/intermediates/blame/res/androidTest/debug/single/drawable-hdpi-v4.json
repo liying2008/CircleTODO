@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\AndroidStudioProjects\\O1\\CircleTODO\\zXingCodeLibs\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "F:\\AndroidStudioProjects\\O1\\CircleTODO\\zXingCodeLibs\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\AndroidStudioProjects\\O1\\CircleTODO\\zXingCodeLibs\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\mzw_camera_open.png",
+        "source": "F:\\AndroidStudioProjects\\O1\\CircleTODO\\zXingCodeLibs\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\mzw_camera_open.png"
+    },
+    {
+        "merged": "F:\\AndroidStudioProjects\\O1\\CircleTODO\\zXingCodeLibs\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\mzw_camera_close.png",
+        "source": "F:\\AndroidStudioProjects\\O1\\CircleTODO\\zXingCodeLibs\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\mzw_camera_close.png"
+    }
+]

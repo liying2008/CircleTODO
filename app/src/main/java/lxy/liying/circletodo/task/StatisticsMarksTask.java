@@ -1,7 +1,9 @@
 package lxy.liying.circletodo.task;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import lxy.liying.circletodo.app.App;
 import lxy.liying.circletodo.db.DateEventService;
@@ -25,6 +27,7 @@ public class StatisticsMarksTask extends MyAsyncTask {
     private OnStatisticsListener listener;
     private List<String> dateList = new ArrayList<>();
     private List<List<SelectedColor>> selectColorList = new ArrayList<>();
+    private Set<SelectedColor> colorSet = new HashSet<>();
 
     public StatisticsMarksTask(OnStatisticsListener listener) {
         this.listener = listener;
@@ -74,8 +77,10 @@ public class StatisticsMarksTask extends MyAsyncTask {
                     colorList = new ArrayList<>(Constants.DAY_MAX_MARK_NUM);
                 }
                 if (date.equals(currDate)) {
-                    colorList.add(new SelectedColor(dateEvent.getColor_id(),
-                            App.scService.getColorEvent(dateEvent.getColor_id())));
+                    SelectedColor selectedColor = new SelectedColor(dateEvent.getColor_id(),
+                            App.scService.getColorEvent(dateEvent.getColor_id()));
+                    colorList.add(selectedColor);
+                    colorSet.add(selectedColor);
                 }
 
                 // 更新进度
@@ -111,8 +116,10 @@ public class StatisticsMarksTask extends MyAsyncTask {
                         colorList = new ArrayList<>(Constants.DAY_MAX_MARK_NUM);
                     }
                     if (date.equals(currDate)) {
-                        colorList.add(new SelectedColor(dateEvent.getColor_id(),
-                                App.scService.getColorEvent(dateEvent.getColor_id())));
+                        SelectedColor selectedColor = new SelectedColor(dateEvent.getColor_id(),
+                                App.scService.getColorEvent(dateEvent.getColor_id()));
+                        colorList.add(selectedColor);
+                        colorSet.add(selectedColor);
                     }
                 }
                 // 更新进度
@@ -148,8 +155,10 @@ public class StatisticsMarksTask extends MyAsyncTask {
                         colorList = new ArrayList<>(Constants.DAY_MAX_MARK_NUM);
                     }
                     if (date.equals(currDate)) {
-                        colorList.add(new SelectedColor(dateEvent.getColor_id(),
-                                App.scService.getColorEvent(dateEvent.getColor_id())));
+                        SelectedColor selectedColor = new SelectedColor(dateEvent.getColor_id(),
+                                App.scService.getColorEvent(dateEvent.getColor_id()));
+                        colorList.add(selectedColor);
+                        colorSet.add(selectedColor);
                     }
                 }
                 // 更新进度
@@ -168,6 +177,6 @@ public class StatisticsMarksTask extends MyAsyncTask {
     @Override
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
-        listener.onComplete(dateList, selectColorList);
+        listener.onComplete(dateList, selectColorList, colorSet);
     }
 }

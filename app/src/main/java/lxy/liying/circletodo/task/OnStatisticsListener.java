@@ -1,6 +1,7 @@
 package lxy.liying.circletodo.task;
 
 import java.util.List;
+import java.util.Set;
 
 import lxy.liying.circletodo.domain.SelectedColor;
 
@@ -18,5 +19,5 @@ public interface OnStatisticsListener {
     /** 统计进度回调 */
     void onProgress(int progress);
     /** 统计完成回调 */
-    void onComplete(List<String> dateList, List<List<SelectedColor>> selectColorList);
+    void onComplete(List<String> dateList, List<List<SelectedColor>> selectColorList, Set<SelectedColor> colorSet);
 }
